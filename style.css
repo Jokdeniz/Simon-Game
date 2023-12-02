@@ -1,0 +1,340 @@
+body {
+  text-align: center;
+  background-color: #011F3F;
+}
+
+#level-title {
+  font-family: 'Press Start 2P', cursive;
+  font-size: 3rem;
+  margin: 5%, 30px;
+  color: #FEF2BF;
+}
+
+.scoreText {
+  font-family: 'Press Start 2P', cursive;
+  color: #FEF2BF;
+  text-decoration: underline;
+  text-decoration-thickness: 3px;
+  font-size: 2rem;
+}
+
+.scoreValue {
+  font-family: 'Press Start 2P', cursive;
+  color: #FEF2BF;
+  font-size: 3rem;
+}
+
+.lastScores {
+  font-family: 'Press Start 2P', cursive;
+  color: #FEF2BF;
+  text-decoration: underline;
+  text-decoration-thickness: 3px;
+  font-size: 2rem;
+}
+
+h4,
+h5,
+h6 {
+  font-family: 'Press Start 2P', cursive;
+  color: #FEF2BF;
+}
+
+.first {
+  font-size: 1.5rem;
+}
+
+.second {
+  font-size: 1.2rem;
+}
+
+.third {
+  font-size: 1rem;
+}
+
+.mobileBtn {
+  width: 100px;
+  height: 40px;
+  font-family: 'Press Start 2P', cursive;
+  font-size: 0.6rem;
+  color: #d5d6d6;
+  background-color: rgb(163, 57, 255);
+  border-radius: 20%;
+  visibility: hidden;
+}
+
+.generalContainer {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 200px;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+}
+
+.row {
+  display: flex;
+  flex-direction: row;
+}
+
+.score {
+  margin-right: 50px;
+}
+
+.btn {
+  margin: 25px;
+  display: inline-block;
+  height: 200px;
+  width: 200px;
+  border: 10px solid black;
+  border-radius: 20%;
+  cursor: pointer;
+}
+
+.game-over {
+  background-color: red;
+  opacity: 0.8;
+}
+
+.red {
+  background-color: red;
+}
+
+.green {
+  background-color: green;
+}
+
+.blue {
+  background-color: blue;
+}
+
+.yellow {
+  background-color: yellow;
+}
+
+.pressed {
+  box-shadow: 0 0 20px white;
+  background-color: grey;
+  transform: translateY(8px);
+  transition: transform 0.8s ease-out;
+}
+
+.pressedGamer {
+  box-shadow: 0 0 20px rgb(255, 255, 23);
+  background-color: #39A7FF;
+  transform: translateY(8px);
+  transition: transform 0.8s ease-out;
+}
+
+/* MEDIA QUERIES*/
+
+@media(max-width: 480px) {
+  #level-title {
+    font-size: 1rem;
+  }
+
+  .generalContainer {
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+  }
+
+  .score {
+    margin-right: 0;
+  }
+
+  .btn {
+    width: 75px;
+    height: 75px;
+    border: 4px solid black;
+    margin: 5px;
+  }
+
+  .mobileBtn {
+    visibility: visible;
+    margin-top: 30px;
+    margin-bottom: 20px;
+  }
+
+  .mobileBtn:hover {
+    background-color: #273039;
+  }
+
+  .scoreText {
+    font-size: 1rem;
+  }
+
+  .scoreValue {
+    font-size: 1.4rem;
+  }
+
+  .lastScores {
+    font-size: 1rem;
+  }
+
+  .first {
+    font-size: 1rem;
+  }
+
+  .second {
+    font-size: 0.75rem;
+  }
+
+  .third {
+    font-size: 0.5rem;
+  }
+
+}
+@media(min-width: 481px) and (max-width: 599px) {
+  #level-title {
+    font-size: 1rem;
+  }
+
+  .generalContainer {
+    gap: 50px;
+  }
+
+  .btn {
+    width: 90px;
+    height: 90px;
+    border: 4.5px solid black;
+  }
+
+  .mobileBtn {
+    visibility: visible;
+    margin-top: 30px;
+    margin-bottom: 20px;
+  }
+
+  .mobileBtn:hover {
+    background-color: #273039;
+  }
+
+  .scoreText {
+    font-size: 1rem;
+  }
+
+  .scoreValue {
+    font-size: 1.4rem;
+  }
+
+  .lastScores {
+    font-size: 1rem;
+  }
+
+  .first {
+    font-size: 1rem;
+  }
+
+  .second {
+    font-size: 0.8rem;
+  }
+
+  .third {
+    font-size: 0.6rem;
+  }
+
+}
+
+@media(min-width: 600px) and (max-width: 750px) {
+  #level-title {
+    font-size: 1.5rem;
+  }
+
+  .generalContainer {
+    gap: 60px;
+  }
+
+  .scoreText {
+    font-size: 1.4rem;
+  }
+
+  .scoreValue {
+    font-size: 1.8rem;
+  }
+
+  .lastScores {
+    font-size: 1.4rem;
+  }
+
+  .first {
+    font-size: 1.4rem;
+  }
+
+  .second {
+    font-size: 1rem;
+  }
+
+  .third {
+    font-size: 0.75rem;
+  }
+
+  .btn {
+    width: 110px;
+    height: 110px;
+    border: 6px solid black;
+  }
+
+  .mobileBtn {
+    visibility: visible;
+    margin-top: 30px;
+    margin-bottom: 20px;
+  }
+
+  .mobileBtn:hover {
+    background-color: #273039;
+  }
+}
+
+
+@media(min-width: 751px) and (max-width: 1100px) {
+  #level-title {
+    font-size: 2rem;
+  }
+  .mobileBtn {
+    visibility: visible;
+    margin-top: 30px;
+    margin-bottom: 20px;
+  }
+
+  .mobileBtn:hover {
+    background-color: #273039;
+  }
+
+  .generalContainer {
+    gap: 130px;
+  }
+
+  .scoreText {
+    font-size: 1.5rem;
+  }
+
+  .scoreValue {
+    font-size: 1.9rem;
+  }
+
+  .lastScores {
+    font-size: 1.5rem;
+  }
+
+  .first {
+    font-size: 1.3rem;
+  }
+
+  .second {
+    font-size: 1.05rem;
+  }
+
+  .third {
+    font-size: 0.9rem;
+  }
+
+  .btn {
+    width: 135px;
+    height: 135px;
+    border: 6px solid black;
+  }
+}
